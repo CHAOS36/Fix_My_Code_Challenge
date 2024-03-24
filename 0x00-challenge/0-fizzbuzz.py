@@ -17,15 +17,15 @@ def fizzbuzz(n):
         return
 
     tmp_result = []
-    for i in range(1, n + 1):
-        if (i % 3) == 0 and (i % 5) == 0:
+    for k in range(1, n + 1):
+        if (k % 3) == 0 and (k % 5) == 0:
             tmp_result.append("FizzBuzz")
-        elif (i % 3) == 0:
+        elif (k % 3) == 0:
             tmp_result.append("Fizz")
-        elif (i % 5) == 0:
+        elif (k % 5) == 0:
             tmp_result.append("Buzz")
         else:
-            tmp_result.append(str(i))
+            tmp_result.append(str(k))
     print(" ".join(tmp_result))
 
 
